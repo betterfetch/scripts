@@ -25,7 +25,11 @@ The update scripts
 ## Update betterfetch rust
 
 ```bash
-curl <LINK> | bash
+curl https://raw.githubusercontent.com/betterfetch/scripts/refs/heads/main/rs/update.sh | bash
 ```
 
 ## Update betterfetch c++
+
+```bash
+curl https://raw.githubusercontent.com/betterfetch/scripts/refs/heads/main/cpp/update.sh | bash
+```

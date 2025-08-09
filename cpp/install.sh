@@ -113,5 +113,4 @@ else
 	echo "/usr/local/bin already in PATH"
 fi
 
-rm -rf INSTALL_DIR
 echo "betterfetch C++ installation complete!"

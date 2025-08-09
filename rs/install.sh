@@ -54,5 +54,4 @@ else
 	echo "Cargo bin path already exists in $SHELL_RC"
 fi
 
-rm -rf $HOME/.betterfetch
 echo "betterfetch installation complete!"
