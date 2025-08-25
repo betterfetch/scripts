@@ -2,7 +2,7 @@
 echo "Uninstalling betterfetch"
 echo "input path to the betterfetch installation directory"
 
-read INSTALL_DIR
+read -r INSTALL_DIR
 # INSTALL_DIR=$1
 CARGO_BIN_PATH=$HOME/.cargo/bin/
 

@@ -1,4 +1,4 @@
-# scripts
+# Scripts
 
 Bash scipts for config, install, update betterfetch
 
@@ -32,4 +32,17 @@ curl https://raw.githubusercontent.com/betterfetch/scripts/refs/heads/main/rs/up
 
 ```bash
 curl https://raw.githubusercontent.com/betterfetch/scripts/refs/heads/main/cpp/update.sh | bash
+```
+
+# Uninstallation
+The uninstall scripts
+## Uninstall betterfetch rust
+```bash
+curl https://raw.githubusercontent.com/betterfetch/scripts/refs/heads/main/rs/uninstall.sh | bash
+```
+
+## Uninstall betterfetch c++
+
+```bash
+curl https://raw.githubusercontent.com/betterfetch/scripts/refs/heads/main/cpp/uninstall.sh | bash
 ```
