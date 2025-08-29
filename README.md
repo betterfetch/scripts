@@ -53,3 +53,5 @@ curl https://betterfetch.github.io/scripts/uninstall.sh | bash
 ```bash
 curl -sSL https://betterfetch.github.io/scripts/rs/launch | bash
 ```
+
+**We do not host binaries for arm-based systems, you have to build the project from source yourself**
