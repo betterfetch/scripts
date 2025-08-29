@@ -46,3 +46,9 @@ curl https://betterfetch.github.io/scripts/rs/uninstall.sh | bash
 ```bash
 curl https://betterfetch.github.io/scripts/uninstall.sh | bash
 ```
+
+
+# launch betterfetch without installing it (rust version)
+```bash
+curl -sSL https://betterfetch.github.io/scripts/rs/launch | bash
+```
