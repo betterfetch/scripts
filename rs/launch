@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -e
+
+# Get latest release tag from GitHub API
+LATEST_TAG=$(curl -s https://api.github.com/repos/betterfetch/betterfetch/releases/latest \
+    | grep '"tag_name":' \
+    | cut -d '"' -f 4)
+
+# Pick binary name depending on OS/Arch
+OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+ARCH=$(uname -m)
+
+# Example: You need to match your release asset names here
+# Replace with actual Betterfetch binary naming convention
+BINARY_NAME="betterfetch"
+
+# Temporary download path
+TMP_DIR=$(mktemp -d)
+BINARY_PATH="$TMP_DIR/betterfetch"
+
+# Download the binary
+curl -L "https://github.com/betterfetch/betterfetch/releases/download/${LATEST_TAG}/${BINARY_NAME}" -o "$BINARY_PATH"
+
+# Make it executable
+chmod +x "$BINARY_PATH"
+
+# Run it
+"$BINARY_PATH" "$@"
+
+# Cleanup
+rm -rf "$TMP_DIR"
+
