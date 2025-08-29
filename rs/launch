@@ -19,7 +19,7 @@ TMP_DIR=$(mktemp -d)
 BINARY_PATH="$TMP_DIR/betterfetch"
 
 # Download the binary
-curl -L "https://github.com/betterfetch/betterfetch/releases/download/${LATEST_TAG}/${BINARY_NAME}" -o "$BINARY_PATH"
+curl -sSL "https://github.com/betterfetch/betterfetch/releases/download/${LATEST_TAG}/${BINARY_NAME}" -o "$BINARY_PATH"
 
 # Make it executable
 chmod +x "$BINARY_PATH"
