@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/env bash
+
+set -e
+
 echo "Uninstalling betterfetch(C++)"
 echo "input path to the betterfetch(C++) installation directory:"
 read INSTALL_DIR

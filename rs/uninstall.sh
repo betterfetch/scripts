@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/env bash
+
 echo "Uninstalling betterfetch"
 echo "input path to the betterfetch installation directory"
 
