@@ -11,7 +11,7 @@ LATEST_TAG=$(curl -s https://api.github.com/repos/betterfetch/betterfetch/releas
 OS=$(uname -s | tr '[:upper:]' '[:lower:]')
 ARCH=$(uname -m)
 
-BINARY_NAME="betterfetch"
+BINARY_NAME="betterfetch_x86_64"
 
 # Temporary download path
 TMP_DIR=$(mktemp -d)

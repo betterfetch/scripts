@@ -35,8 +35,11 @@ curl https://betterfetch.github.io/scripts/cpp/update.sh | bash
 ```
 
 # Uninstallation
+
 The uninstall scripts
+
 ## Uninstall betterfetch rust
+
 ```bash
 curl https://betterfetch.github.io/scripts/rs/uninstall.sh | bash
 ```
@@ -47,9 +50,10 @@ curl https://betterfetch.github.io/scripts/rs/uninstall.sh | bash
 curl https://betterfetch.github.io/scripts/uninstall.sh | bash
 ```
 
-
 # launch betterfetch without installing it (rust version)
+
 **Disclaimer:** This is slower than installing it locally
+
 ```bash
 curl -sSL https://betterfetch.github.io/scripts/rs/launch | bash
 ```
